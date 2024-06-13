@@ -19,12 +19,12 @@ Exemplos:
   | Laranja   | M      | 3          |
   | Vermelho  | G      | 1          |
 
-Cenário1: Limpar configuração
+Cenário: Limpar configuração
   Dado que estou na página de configuração do produto
-  QUando clico no botão "Limpar"
+  Quando clico no botão "Limpar"
   Então deverá voltar ao estado original
 
-Cenário2: Limitar quantidade de produtos
+Cenário: Limitar quantidade de produtos
   Dado que estou na página de configuração do produto
   Quando seleciono mais de 10 produtos
   Então deverá exibir uma mensagem de erro "Limite de 10 produtos por venda alcançado"
