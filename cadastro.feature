@@ -23,11 +23,11 @@ Funcionalidade: Cadastro
     Então deve exibir uma mensagem de alerta "Todos os campos obrigatórios devem ser preenchidos"
 
 Esquema de cenário: Cadastro com diferentes formatos de e-mail inválidos
-    Quando eu preencher todos os dados obrigatórios incorretamente
-    Então deve exibir uma mensagem de erro "Formato de e-mail inválido"
+    Quando eu preencher o <email> e <senha> incorretamente
+    Então deve exibir uma <mensagem> de erro
 
     Exemplo:
-      | email              |
-      | emailsemarroba.com |
-      | @semusuario.com    |
-      | usuario@.com       |
+      | email              |   senha      | mensagem
+      | "emailsemarroba.com" | "523614  "   | "Usuário ou senha inválidos"                          |
+      | "@semusuario.com"    | " "          | "Todos os campos devem ser preenchidos corretamente"  |
+      | "usuario@.com"      | "."          | "Usuário ou senha inválidos"                          |
